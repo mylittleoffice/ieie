@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arapça Gündelik Kelime Öğren - Kur'an Odaklı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-book-quran"></i> Kur'an Arapçası Öğren</h1>
+        <p class="subtitle">Her gün 5 Kur'an kelimesi öğrenin, İlahi Kelam'ı anlayın</p>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="controls">
+            <div class="date-selector">
+                <button class="btn" id="prevDay"><i class="fas fa-chevron-left"></i> Önceki Gün</button>
+                <span id="currentDate">Gün 1</span>
+                <button class="btn" id="nextDay">Sonraki Gün <i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="stats">
+                <span id="stats">Toplam <span id="totalWords">0</span> kelime öğrenildi</span>
+            </div>
+            
+            <div class="theme-toggle">
+                <button class="btn btn-outline" id="themeToggle">
+                    <i class="fas fa-moon"></i> Tema Değiştir
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="today-words">
+            <h2 class="section-title"><i class="fas fa-calendar-day"></i> Bugünün Kelimeleri</h2>
+            <div class="words-grid" id="todayWords">
+                <!-- Kelimeler JavaScript ile buraya eklenecek -->
+            </div>
+        </section>
+        
+        <section class="learned-words">
+            <h2 class="section-title"><i class="fas fa-history"></i> Öğrenilen Kelimeler</h2>
+            <div id="learnedWordsList">
+                <!-- Öğrenilen kelimeler JavaScript ile buraya eklenecek -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="motivation-section">
+            <div class="motivation-item">
+                <i class="fas fa-star"></i>
+                <p class="motivation-text">"Kim ilim tahsil etmek için bir yola girerse, Allah ona cennetin yolunu kolaylaştırır."</p>
+                <p class="motivation-source">Hadis-i Şerif (Müslim)</p>
+            </div>
+            
+            <div class="motivation-item">
+                <i class="fas fa-star"></i>
+                <p class="motivation-text">"Hiç bilenlerle bilmeyenler bir olur mu?"</p>
+                <p class="motivation-source">Zümer Suresi, 9. Ayet</p>
+            </div>
+            
+            <div class="motivation-item">
+                <i class="fas fa-star"></i>
+                <p class="motivation-text">"Allah, içinizden iman edenlerin ve kendilerine ilim verilenlerin derecelerini yükseltir."</p>
+                <p class="motivation-source">Mücadele Suresi, 11. Ayet</p>
+            </div>
+        </div>
+        
+        <div class="gift-message">
+            <div class="heart">i❤️E</div>
+            <p class="gift-text">Sevgili İlknur Hanım'a Hediye Olsun</p>
+            <p class="prayer">Allah bizden razı olsun, ilim öğrenme yolunda muvaffak eylesin</p>
+            
+        </div>
+    </footer>
+
+    <!-- Kelime veritabanını yükle -->
+    <script src="words-database.js"></script>
+    <!-- Ana JavaScript dosyası -->
+    <script src="app.js"></script>
+</body>
+</html>
